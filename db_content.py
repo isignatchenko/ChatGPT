@@ -1,11 +1,11 @@
-from sqlalchemy import create_engine, exists, PickleType
+from sqlalchemy import create_engine, exists, PickleType, BigInteger
 from sqlalchemy import Column, String, Integer
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.ext.mutable import MutableList
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine('sqlite:///db_content.sqlite', echo=True)
-# engine = create_engine('postgresql://gen_user:440Herz440@188.225.24.153:5432/default_db', echo=True)
+# engine = create_engine('sqlite:///db_content.sqlite', echo=True)
+engine = create_engine('postgresql://gen_user:440Herz440@188.225.24.153:5432/default_db', echo=True)
 
 base = declarative_base()
 
@@ -13,7 +13,7 @@ base = declarative_base()
 class Messages(base):
     __tablename__ = 'messages'
 
-    chat_id = Column(Integer, primary_key=True)
+    chat_id = Column(BigInteger, primary_key=True)
     messages = Column(MutableList.as_mutable(PickleType), default=[])
     total_tokens = Column(Integer)
 

@@ -1,13 +1,13 @@
-bot_token = "6185553120:AAHj-fJxN1jA_C_Rr1Egqsvsve9_Tx2_ZXo"
-bot_name = "@fortestivan31bot"
+# bot_token = "6185553120:AAHj-fJxN1jA_C_Rr1Egqsvsve9_Tx2_ZXo"
+# bot_name = "@fortestivan31bot"
 
-# bot_token = "6013396624:AAHxHsIe6DsCoHyivD4acQzpmNncrtvbfHY"
-# bot_name = "@yourgptbrobot"
+bot_token = "6013396624:AAHxHsIe6DsCoHyivD4acQzpmNncrtvbfHY"
+bot_name = "@yourgptbrobot"
 
-api_key = "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"
+api_key = "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"
 
-payments_provider_token = "1744374395:TEST:a510e4af7fe0464ca2d6"
-# payments_provider_token = "390540012:LIVE:31250"
+# payments_provider_token = "1744374395:TEST:a510e4af7fe0464ca2d6"
+payments_provider_token = "390540012:LIVE:31250"
 
 invoice_img = "https://belikova.ru/local/assets/images/bbbb.png"
 

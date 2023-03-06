@@ -5,8 +5,8 @@ from sqlalchemy.orm import sessionmaker
 
 from config import *
 
-engine = create_engine('sqlite:///db_users.sqlite', echo=True)
-# engine = create_engine('postgresql://gen_user:440Herz440@188.225.24.153:5432/default_db', echo=True)
+# engine = create_engine('sqlite:///db_users.sqlite', echo=True)
+engine = create_engine('postgresql://gen_user:440Herz440@188.225.24.153:5432/default_db', echo=True)
 
 base = declarative_base()
 
